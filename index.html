@@ -3,7 +3,9 @@
 <head>
 	<title>Portfolio</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style/header.css">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
 </head>
 <body>
 	<header>
@@ -34,6 +36,9 @@
 	<!-- // header end // -->
 	<section class="content">
 		<div class="content__left">
+			<svg class="about__triangle" viewBox="0 0 1000 110" preserveAspectRatio="none">
+				<polygon points="0,0 0,110 1000, 110"></polygon>
+			</svg>
 			<div class="about__title"></div>
 			<div class="about">
 				<img src="">
@@ -51,6 +56,9 @@
 		</div>
 		<!-- // about__left end // -->
 		<div class="content__right">
+			<svg class="about__triangle" viewBox="0 0 1000 110" preserveAspectRatio="none">
+				<polygon points="0,110 1000,110 1000,0"></polygon>
+			</svg>
 			<h2>Чем я могу быть вам полезен</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			</p>
@@ -133,10 +141,12 @@
 					<a href="">Блог</a>
 					<a href="">Авторизация</a>
 
+					
+
 					<ul class="socials">
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
+						<li><a href="#"><img src="img/icons/github.svg"></a></li>
+						<li><a href="#"><img src="img/icons/github.svg"></a></li>
+						<li><a href="#"><img src="img/icons/github.svg"></a></li>
 					</ul>
 				</li>
 				<li>
@@ -148,5 +158,51 @@
 		</div>
 		<div class="footer"><p>© Алексей Мирошниченко | Создано с любовью | 2017</p></div>
 	</footer>
+	<style type="text/css">
+		@font-face{
+			font-family:FontAwesome;
+			src: url(fonts/FontAwesome.otf);
+		}
+		@font-face{
+		    font-family:fontawesome-webfont;
+		    src: url(fonts/fontawesome-webfont.ttf);
+		}
+		@font-face{
+		    font-family:Roboto-Bold;
+		    src: url(fonts/Roboto-Bold.ttf);
+		}
+		@font-face{
+		    font-family:Roboto-BoldItalic;
+		    src: url(fonts/Roboto-BoldItalic.ttf);
+		}
+		@font-face{
+		    font-family:Roboto-Italic;
+		    src: url(fonts/Roboto-Italic.ttf);
+		}
+		@font-face{
+		    font-family:Roboto-Light;
+		    src: url(fonts/Roboto-Light.ttf);
+		}
+		@font-face{
+		    font-family:Roboto-LightItalic;
+		    src: url(fonts/Roboto-LightItalic.ttf);
+		}
+		@font-face{
+		    font-family:Roboto-Medium;
+		    src: url(fonts/Roboto-Medium.ttf);
+		}
+		@font-face{
+		    font-family:Roboto-MediumItalic;
+		    src: url(fonts/Roboto-MediumItalic.ttf);
+		}
+		@font-face{
+		    font-family:Roboto-Regular;
+		    src: url(fonts/Roboto-Regular.ttf);
+		}
+		@font-face{
+		    font-family:Sansus-Webissimo-Regular;
+		    src: url(fonts/Sansus-Webissimo-Regular.ttf);
+		}
+	</style>
 </body>
 </html>

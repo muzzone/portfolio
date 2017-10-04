@@ -1,0 +1,12 @@
+.map{
+	width: 100%;
+	text-align: center;
+	.contacts{
+		display: flex;
+		flex-direction: column;
+		flex-basis: 380px;
+		min-height: 315px;
+		background: rgba(255,255,255,0.5);
+		
+	}
+}

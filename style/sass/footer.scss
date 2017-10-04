@@ -1,0 +1,14 @@
+footer{
+	.mainContent{
+		ul{
+			display: flex;
+			justify-content: space-between;
+			li{
+				width: 33%;
+			}
+		}
+	}
+	.footer{
+		text-align: center;
+	}
+}

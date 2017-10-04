@@ -20,38 +20,42 @@ p {
   margin: 0;
   padding: 0; }
 
-@font-face {
-  font-family: FontAwesome;
-  src: url(../fonts/FontAwesome.otf); }
-@font-face {
-  font-family: fontawesome-webfont;
-  src: url(../fonts/fontawesome-webfont.ttf); }
-@font-face {
-  font-family: Roboto-Bold;
-  src: url(../fonts/Roboto-Bold.ttf); }
-@font-face {
-  font-family: Roboto-BoldItalic;
-  src: url(../fonts/Roboto-BoldItalic.ttf); }
-@font-face {
-  font-family: Roboto-Italic;
-  src: url(../fonts/Roboto-Italic.ttf); }
-@font-face {
-  font-family: Roboto-Light;
-  src: url(../fonts/Roboto-Light.ttf); }
-@font-face {
-  font-family: Roboto-LightItalic;
-  src: url(../fonts/Roboto-LightItalic.ttf); }
-@font-face {
-  font-family: Roboto-Medium;
-  src: url(../fonts/Roboto-Medium.ttf); }
-@font-face {
-  font-family: Roboto-MediumItalic;
-  src: url(../fonts/Roboto-MediumItalic.ttf); }
-@font-face {
-  font-family: Roboto-Regular;
-  src: url(../fonts/Roboto-Regular.ttf); }
-@font-face {
-  font-family: Sansus-Webissimo-Regular;
-  src: url(../fonts/Sansus-Webissimo-Regular.ttf); }
+.content {
+  display: flex; }
+  .content .about__triangle {
+    display: block;
+    width: 100%;
+    height: 6.875rem;
+    margin-top: -110px; }
+  .content .content__left {
+    background: #eceee2;
+    width: 50%; }
+    .content .content__left .about__triangle {
+      left: 0;
+      fill: #eceee2; }
+  .content .content__right {
+    background: #f4f5f0;
+    width: 50%; }
+    .content .content__right .about__triangle {
+      right: 0;
+      fill: #f4f5f0; }
+
+.map {
+  width: 100%;
+  text-align: center; }
+  .map .contacts {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 380px;
+    min-height: 315px;
+    background: rgba(255, 255, 255, 0.5); }
+
+footer .mainContent ul {
+  display: flex;
+  justify-content: space-between; }
+  footer .mainContent ul li {
+    width: 33%; }
+footer .footer {
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

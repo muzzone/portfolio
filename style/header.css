@@ -22,7 +22,8 @@ p {
 
 header {
   height: 780px;
-  background-image: url("../img/water.jpg"); }
+  background-image: url("../img/water.jpg");
+  background-position: center; }
   header nav {
     max-width: 1800px;
     height: 100px;
