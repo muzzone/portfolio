@@ -22,6 +22,21 @@ p {
 
 .content {
   display: flex; }
+  .content h2 {
+    font-size: 35px;
+    color: #3c4044;
+    font-family: 'Sansus-Webissimo-Regular';
+    text-transform: uppercase; }
+  .content h3 {
+    font-size: 28px;
+    color: #3c4044;
+    font-family: 'Roboto-medium';
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px; }
+  .content hr {
+    border: 2px solid #3c4044;
+    width: 90px; }
   .content .about__triangle {
     display: block;
     width: 100%;
@@ -33,12 +48,79 @@ p {
     .content .content__left .about__triangle {
       left: 0;
       fill: #eceee2; }
+    .content .content__left .hero {
+      display: flex;
+      margin-top: 20px; }
+      .content .content__left .hero div {
+        width: 48%; }
+      .content .content__left .hero .about__title {
+        text-align: center; }
+        .content .content__left .hero .about__title h1 {
+          font-size: 63px;
+          color: #3c4044;
+          font-family: 'Sansus-Webissimo-Regular'; }
+        .content .content__left .hero .about__title .background {
+          width: 340px;
+          opacity: 0.05;
+          position: relative;
+          top: -130px; }
+        .content .content__left .hero .about__title hr {
+          border: 2px solid #3c4044;
+          width: 90px;
+          margin: auto;
+          margin-top: 20px; }
+      .content .content__left .hero .about {
+        text-align: center; }
+        .content .content__left .hero .about h2 {
+          margin-top: 40px; }
+        .content .content__left .hero .about hr {
+          margin: 30px auto; }
+        .content .content__left .hero .about p {
+          margin-bottom: 25px;
+          font-family: 'Roboto-Regular';
+          font-size: 16px;
+          color: #3c4044;
+          text-align: start; }
   .content .content__right {
     background: #f4f5f0;
     width: 50%; }
     .content .content__right .about__triangle {
       right: 0;
       fill: #f4f5f0; }
+    .content .content__right .skills {
+      margin-top: 20px;
+      padding-left: 40px;
+      display: flex;
+      flex-direction: column; }
+      .content .content__right .skills hr {
+        margin: 30px auto; }
+      .content .content__right .skills h2 {
+        text-align: center; }
+      .content .content__right .skills p {
+        margin-bottom: 25px;
+        font-family: 'Roboto-Regular';
+        font-size: 16px;
+        color: #3c4044;
+        text-align: start; }
+      .content .content__right .skills ul {
+        display: flex;
+        height: 120px;
+        justify-content: space-evenly; }
+        .content .content__right .skills ul li .skill {
+          text-align: center; }
+          .content .content__right .skills ul li .skill .skill__title {
+            margin-top: -72px;
+            font-family: 'Roboto-medium';
+            color: #82a066;
+            font-size: 14px; }
+          .content .content__right .skills ul li .skill svg {
+            height: 120px;
+            fill: transparent;
+            stroke-width: 15; }
+            .content .content__right .skills ul li .skill svg .skills__circle-under {
+              stroke: #dddbd5; }
+            .content .content__right .skills ul li .skill svg .skills__circle-above {
+              stroke: #82a066; }
 
 .map {
   width: 100%;

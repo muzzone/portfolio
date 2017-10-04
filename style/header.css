@@ -45,6 +45,13 @@ header {
   header .main {
     width: 100%;
     text-align: center; }
+    header .main > img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      opacity: 0.2; }
     header .main .hero {
       text-align: center; }
       header .main .hero h3 {
