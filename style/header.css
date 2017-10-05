@@ -70,5 +70,10 @@ header {
   align-items: center; }
   .socials li {
     margin: 0 10px; }
+    .socials li a .svgico {
+      fill: #fff;
+      transition: 0.15s; }
+    .socials li a:hover .svgico {
+      fill: #7b9b5e; }
 
 /*# sourceMappingURL=header.css.map */

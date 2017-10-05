@@ -61,5 +61,18 @@ header{
 	align-items: center;
 	li{
 		margin:0 10px;
+		a{
+			
+			.svgico{
+				fill:#fff;
+				transition: 0.15s;
+			}
+		}
+		a:hover{
+			.svgico{
+				fill:#7b9b5e;
+			}
+		}
 	}
+
 }

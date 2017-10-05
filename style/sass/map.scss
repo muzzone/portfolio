@@ -1,12 +1,46 @@
 .map{
+	background: url('../img/map.png');
+	background-position: center;
+	height:1110px;
 	width: 100%;
 	text-align: center;
+	h2{
+		font-size: 35px;
+		color:#5a6359;
+		font-family: 'Sansus-Webissimo-Regular';
+		text-transform: uppercase;
+		margin-top: 30px;
+	}
+	hr{
+		border: 2px solid #5a6359;
+		width: 90px;
+		margin: 30px auto;
+	}
 	.contacts{
+		position: relative;
+		top: 330px;
 		display: flex;
 		flex-direction: column;
-		flex-basis: 380px;
+		max-width: 380px;
+    	margin: auto;
 		min-height: 315px;
-		background: rgba(255,255,255,0.5);
-		
+		background: rgba(255,255,255,0.6);
+		border-radius: 3px;
+		.contacts__content{
+			text-align: start;
+			margin-left: 40px;
+			li{
+				margin:15px 0;
+				p{
+					display: inline-block;
+					font-family: 'Roboto-medium';
+					color:#5b6359;
+					font-size: 16px;
+					margin-left: 10px;
+					position: relative;
+    				top: -5px;
+				}
+			}
+		}
 	}
 }
