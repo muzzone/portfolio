@@ -124,6 +124,9 @@ p {
               .content .content__right .skills ul li .skill svg .skills__circle-above {
                 stroke: #82a066; }
 
+.about__triangle_mobile {
+  display: none; }
+
 .map {
   background: url("../img/map.png");
   background-position: center;
@@ -167,7 +170,7 @@ p {
 footer {
   margin-top: -188px; }
   footer .mainContent {
-    height: 120px;
+    min-height: 120px;
     background: rgba(60, 64, 68, 0.85);
     padding-top: 30px; }
     footer .mainContent > ul {
@@ -188,6 +191,8 @@ footer {
           text-decoration: none;
           color: #fff;
           margin-right: 40px; }
+        footer .mainContent > ul > li a:nth-child(4) {
+          margin-right: 0; }
         footer .mainContent > ul > li q {
           font-family: 'Roboto-light';
           font-size: 16px;
@@ -217,5 +222,51 @@ footer {
       font-family: 'Roboto-light';
       font-size: 16px;
       color: #fff; }
+
+@media screen and (max-width: 1480px) {
+  .content .content__left .hero {
+    flex-wrap: wrap; }
+    .content .content__left .hero div {
+      width: 100%; }
+    .content .content__left .hero .about {
+      padding: 0 20px;
+      padding-bottom: 50px; }
+
+  footer .mainContent > ul > li > a {
+    margin-right: 20px; } }
+@media screen and (max-width: 1280px) {
+  .content .content__right .skills ul li {
+    margin-right: 20px; } }
+@media screen and (max-width: 1180px) {
+  .about__triangle_mobile {
+    display: block;
+    height: auto;
+    margin-top: -100px; }
+
+  .content {
+    flex-wrap: wrap; }
+    .content .content__left, .content .content__right {
+      width: 100%; }
+
+  .content .content__right .skills ul {
+    justify-content: center; }
+
+  .content h3 {
+    text-align: center; }
+
+  .content .about__triangle {
+    display: none; }
+
+  .content .content__left .hero .about__title {
+    height: 150px; }
+
+  footer .mainContent > ul {
+    flex-wrap: wrap; }
+    footer .mainContent > ul > li {
+      width: calc(50% - 16px);
+      padding-left: 15px; }
+    footer .mainContent > ul > li:nth-child(3) {
+      width: 100%;
+      margin-top: 20px; } }
 
 /*# sourceMappingURL=main.css.map */

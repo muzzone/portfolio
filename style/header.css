@@ -21,7 +21,7 @@ p {
   padding: 0; }
 
 header {
-  height: 780px;
+  height: 600px;
   background-image: url("../img/water.jpg");
   background-position: center; }
   header nav {
@@ -44,14 +44,16 @@ header {
         border-radius: 3px; }
   header .main {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    margin-top: 50px; }
     header .main > img {
       position: absolute;
-      top: 50%;
+      top: 300px;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-      opacity: 0.2; }
+      opacity: 0.2;
+      max-width: 100%; }
     header .main .hero {
       text-align: center; }
       header .main .hero h3 {

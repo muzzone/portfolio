@@ -1,0 +1,57 @@
+@media screen and (max-width: 1480px){
+	.content .content__left .hero{
+		flex-wrap: wrap;
+		div{
+			width: 100%;
+		}
+		.about{
+			padding: 0 20px;
+			padding-bottom: 50px;
+		}
+	}
+	footer .mainContent > ul > li > a{
+		margin-right: 20px;
+	}
+
+}
+@media screen and (max-width: 1280px){
+	.content .content__right .skills ul li{
+		margin-right: 20px;
+	}
+}
+@media screen and (max-width: 1180px){
+	.about__triangle_mobile{
+		display: block;
+		height: auto;
+		margin-top: -100px;
+	}
+	.content{
+		flex-wrap: wrap;
+		.content__left, .content__right{
+			width: 100%;
+		}
+	}
+	.content .content__right .skills ul{
+		justify-content: center;
+	}
+	.content h3{
+		text-align: center;
+	}
+	.content .about__triangle{
+		display: none;
+	}
+	.content .content__left .hero .about__title{
+    	height: 150px;
+	}
+	footer .mainContent > ul{
+		flex-wrap: wrap;
+		>li{
+			width: calc(50% - 16px);
+			padding-left: 15px;
+		}
+		>li:nth-child(3){
+			width: 100%;
+			margin-top: 20px;
+		}
+	}
+}
