@@ -212,16 +212,19 @@ footer {
               opacity: 1; }
       footer .mainContent > ul li:nth-child(3) {
         border-right: none; }
-  footer .footer {
-    height: 38px;
+  footer .footer1, footer .footer2 {
     display: flex;
     justify-content: center;
     align-items: center;
     background: rgba(123, 155, 94, 0.85); }
-    footer .footer p {
+    footer .footer1 p, footer .footer2 p {
       font-family: 'Roboto-light';
       font-size: 16px;
-      color: #fff; }
+      color: #fff;
+      padding: 10px 0; }
+
+.footer2 p {
+  display: none; }
 
 @media screen and (max-width: 1480px) {
   .content .content__left .hero {
@@ -268,5 +271,63 @@ footer {
     footer .mainContent > ul > li:nth-child(3) {
       width: 100%;
       margin-top: 20px; } }
+@media screen and (max-width: 766px) {
+  footer .mainContent > ul > li {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding: 0 10px;
+    border-right: none; }
+    footer .mainContent > ul > li .socials {
+      justify-content: center; }
+
+  header .main > img {
+    display: none; }
+
+  .content .content__right .skills ul {
+    height: auto;
+    min-height: 120px;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    .content .content__right .skills ul li {
+      height: 120px;
+      margin-right: 0; }
+
+  .content .content__right .skills {
+    padding-left: 10px; }
+
+  .content .content__left .hero .about img {
+    max-width: 100%; }
+
+  .content .content__left .hero .about__title .background {
+    max-width: 100%; }
+
+  footer .mainContent > ul > li .socials li {
+    margin-right: 0;
+    margin: 0 15px; } }
+@media screen and (max-width: 426px) {
+  .map .contacts {
+    max-width: 100%;
+    margin: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.85); }
+
+  footer .mainContent > ul > li {
+    height: auto;
+    min-height: 90px;
+    padding-bottom: 10px; }
+
+  footer .mainContent > ul > li > a {
+    margin-right: 0;
+    margin: 0 5px; }
+
+  .footer2 p {
+    display: block; }
+
+  .footer1 p {
+    display: none; } }
+@media screen and (max-width: 570px) {
+  .about__triangle_mobile {
+    margin-top: -55px; } }
 
 /*# sourceMappingURL=main.css.map */

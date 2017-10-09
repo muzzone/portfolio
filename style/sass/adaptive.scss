@@ -55,3 +55,79 @@
 		}
 	}
 }
+@media screen and (max-width: 766px){
+	footer .mainContent > ul > li{
+		width: 100%;
+    	text-align: center;
+    	padding-left: 0;
+    	padding:0 10px;
+    	border-right:none;
+		
+    	.socials{
+    		justify-content: center;
+    	}
+	}
+	header .main > img{
+		display: none;
+	}
+	.content .content__right .skills ul{
+		height: auto;
+		min-height: 120px;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		li{
+			height: 120px;
+			margin-right: 0;
+		}
+	}
+	.content .content__right .skills{
+		padding-left:10px;
+	}
+	.content .content__left .hero .about{
+		img{
+			max-width: 100%;
+		}
+	}
+
+	.content .content__left .hero .about__title .background{
+		max-width: 100%;
+	}
+	footer .mainContent > ul > li .socials li{
+		margin-right: 0;
+		margin:0 15px;
+	}
+}
+@media screen and (max-width: 426px){
+	.map .contacts{
+		max-width: 100%;
+		margin:0;
+		top:0;
+		    background: rgba(255, 255, 255, 0.85);
+	}
+	footer .mainContent > ul > li{
+		height: auto;
+		min-height: 90px;
+		padding-bottom: 10px;
+	}
+	footer .mainContent > ul > li > a{
+		margin-right: 0;
+		margin: 0 5px;
+	}
+	.footer2{
+		p{
+			display: block;
+		}
+		
+	}
+	.footer1{
+		p{
+			display: none;
+		}
+		
+	}
+}
+@media screen and (max-width: 570px){
+.about__triangle_mobile{
+		margin-top: -55px;
+	}
+}
