@@ -1,3 +1,36 @@
+@font-face {
+  font-family: FontAwesome;
+  src: url(../fonts/FontAwesome.otf); }
+@font-face {
+  font-family: fontawesome-webfont;
+  src: url(../fonts/fontawesome-webfont.ttf); }
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../fonts/Roboto-Bold.ttf); }
+@font-face {
+  font-family: Roboto-BoldItalic;
+  src: url(../fonts/Roboto-BoldItalic.ttf); }
+@font-face {
+  font-family: Roboto-Italic;
+  src: url(../fonts/Roboto-Italic.ttf); }
+@font-face {
+  font-family: Roboto-Light;
+  src: url(../fonts/Roboto-Light.ttf); }
+@font-face {
+  font-family: Roboto-LightItalic;
+  src: url(../fonts/Roboto-LightItalic.ttf); }
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(../fonts/Roboto-Medium.ttf); }
+@font-face {
+  font-family: Roboto-MediumItalic;
+  src: url(../fonts/Roboto-MediumItalic.ttf); }
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../fonts/Roboto-Regular.ttf); }
+@font-face {
+  font-family: Sansus-Webissimo-Regular;
+  src: url(../fonts/Sansus-Webissimo-Regular.ttf); }
 body {
   margin: 0;
   padding: 0; }
@@ -226,6 +259,54 @@ footer {
 .footer2 p {
   display: none; }
 
+.triangle-blog {
+  height: auto;
+  margin-top: -145px; }
+
+.footer-blog {
+  margin-top: 0; }
+
+.blog {
+  background: #faf8f1; }
+  .blog p, .blog h2, .blog h3 {
+    color: #5a6359; }
+  .blog .blog-wrapper {
+    display: flex;
+    justify-content: space-evenly; }
+    .blog .blog-wrapper .nav-blog {
+      width: 270px; }
+      .blog .blog-wrapper .nav-blog ul li {
+        font-family: 'Roboto-Regular';
+        font-size: 16px;
+        padding: 16px 0;
+        text-align: end;
+        padding-right: 18px; }
+    .blog .blog-wrapper .blog-content {
+      padding-bottom: 70px;
+      max-width: 740px; }
+      .blog .blog-wrapper .blog-content section {
+        padding: 0 20px; }
+        .blog .blog-wrapper .blog-content section h2 {
+          font-family: 'Sansus-Webissimo-Regular';
+          font-size: 35px;
+          margin-bottom: 30px; }
+        .blog .blog-wrapper .blog-content section .data {
+          font-size: 16px;
+          color: #638741;
+          font-family: 'Roboto-Regular';
+          margin: 30px 0;
+          display: block; }
+        .blog .blog-wrapper .blog-content section hr {
+          margin: 73px 0;
+          height: 0px;
+          border: none;
+          border-bottom: 5px solid #ecebe4; }
+
+.blog-active {
+  border-right: 3px solid #7b9b5e;
+  font-family: "Roboto-Bold" !important;
+  color: #7b9b5e; }
+
 @media screen and (max-width: 1480px) {
   .content .content__left .hero {
     flex-wrap: wrap; }
@@ -329,5 +410,8 @@ footer {
 @media screen and (max-width: 570px) {
   .about__triangle_mobile {
     margin-top: -55px; } }
+@media screen and (max-width: 1020px) {
+  .nav-blog {
+    display: none !important; } }
 
 /*# sourceMappingURL=main.css.map */
