@@ -97,24 +97,28 @@
 		</div>
 		<div class="content__right content__right-portfolio">
 			<ul class="workImages">
-				<li><img src="#"></li>
-				<li><img src="#"></li>
-				<li><img src="#"></li>
-				<li><img src="#"></li>
+				<li><img src="img/work1.png"></li>
 			</ul>
-			<button class="next"></button>
-			<button class="prv"></button>
+			<div class="buttons">
+				<div class="next">
+					
+				</div>
+				<div class="prev">
+					
+				</div>
+			</div>
+			
 		</div>
 	</section>
 	<section class="aboutMe" style="height: 1356px;">
 		<div class="title">
-			<h2>что обо мне говорят</h2>
+			<h2>что обо мне <br> говорят</h2>
 			<hr noshade>
-			<img src="#">
+			<img src="img/icons/about_header.svg">
 		</div>
 		<ul class="says">
 			<li>
-				<img src="">
+				<img src="img/1.png">
 				<p>
 					Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
 				</p>
@@ -126,7 +130,7 @@
 				</p>
 			</li>
 			<li>
-				<img src="">
+				<img src="img/2.png">
 				<p>
 					Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
 				</p>
@@ -142,11 +146,14 @@
 			<h3>связатся со мной</h3>
 			<hr>
 			<form action="#">
-				<input type="text" name="name">
-				<input type="text" name="email">
-				<input type="text" name="message">
-				<button>отправить</button>
-				<button>очистить</button>
+				<input type="text" name="name" placeholder="Имя">
+				<input type="text" name="email" placeholder="Email">
+				<input type="text" name="message" placeholder="Ваше сообщение">
+				<div>
+					<button class="send">Отправить</button>
+					<button class="clean">Очистить</button>
+				</div>
+				
 			</form>
 		</div>
 	</section>
