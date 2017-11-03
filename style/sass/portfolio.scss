@@ -180,7 +180,7 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			input{
+			input, textarea{
 				margin-top: 20px;
 				border: none;
 				border-radius: 21px;
@@ -192,8 +192,12 @@
 				color: #5d5a55;
 				padding:0 20px;
 			}
-			input:nth-child(3){
-				height: 140px;
+			textarea{
+				min-width: 80%;
+				max-width: 80%;
+				min-height: 140px;
+				max-height: 140px;
+				padding-top: 15px;
 			}
 
 			div{

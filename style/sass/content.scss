@@ -124,6 +124,7 @@
     						}
     						.skills__circle-above {
 							    stroke: #82a066;
+							    stroke-dasharray: 260;
 							}
 						}
 					}
@@ -134,4 +135,61 @@
 }
 .about__triangle_mobile{
 	display:none;
+}
+.skills_95{
+	stroke-dashoffset: 21;
+}
+.skills_90{
+	stroke-dashoffset: 34;
+}
+.skills_85{
+	stroke-dashoffset: 47;
+}
+.skills_80{
+	stroke-dashoffset: 60;
+}
+.skills_75{
+	stroke-dashoffset: 73;
+}
+.skills_70{
+	stroke-dashoffset: 86;
+}
+.skills_65{
+	stroke-dashoffset: 99;
+}
+.skills_60{
+	stroke-dashoffset: 112;
+}
+.skills_55{
+	stroke-dashoffset: 125;
+}
+.skills_50{
+	stroke-dashoffset: 138;
+}
+.skills_45{
+	stroke-dashoffset: 151;
+}
+.skills_40{
+	stroke-dashoffset: 164;
+}
+.skills_35{
+	stroke-dashoffset: 177;
+}
+.skills_30{
+	stroke-dashoffset: 190;
+}
+.skills_25{
+	stroke-dashoffset: 203;
+}
+.skills_20{
+	stroke-dashoffset: 216;
+}
+.skills_15{
+	stroke-dashoffset: 229;
+}
+.skills_10{
+	stroke-dashoffset: 242;
+}
+.skills_5{
+	stroke-dashoffset: 255;
 }

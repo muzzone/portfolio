@@ -155,10 +155,68 @@ p {
               .content .content__right .skills ul li .skill svg .skills__circle-under {
                 stroke: #dddbd5; }
               .content .content__right .skills ul li .skill svg .skills__circle-above {
-                stroke: #82a066; }
+                stroke: #82a066;
+                stroke-dasharray: 260; }
 
 .about__triangle_mobile {
   display: none; }
+
+.skills_95 {
+  stroke-dashoffset: 21; }
+
+.skills_90 {
+  stroke-dashoffset: 34; }
+
+.skills_85 {
+  stroke-dashoffset: 47; }
+
+.skills_80 {
+  stroke-dashoffset: 60; }
+
+.skills_75 {
+  stroke-dashoffset: 73; }
+
+.skills_70 {
+  stroke-dashoffset: 86; }
+
+.skills_65 {
+  stroke-dashoffset: 99; }
+
+.skills_60 {
+  stroke-dashoffset: 112; }
+
+.skills_55 {
+  stroke-dashoffset: 125; }
+
+.skills_50 {
+  stroke-dashoffset: 138; }
+
+.skills_45 {
+  stroke-dashoffset: 151; }
+
+.skills_40 {
+  stroke-dashoffset: 164; }
+
+.skills_35 {
+  stroke-dashoffset: 177; }
+
+.skills_30 {
+  stroke-dashoffset: 190; }
+
+.skills_25 {
+  stroke-dashoffset: 203; }
+
+.skills_20 {
+  stroke-dashoffset: 216; }
+
+.skills_15 {
+  stroke-dashoffset: 229; }
+
+.skills_10 {
+  stroke-dashoffset: 242; }
+
+.skills_5 {
+  stroke-dashoffset: 255; }
 
 .map {
   background: url("../img/map.png");
@@ -463,7 +521,7 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .aboutMe .contactFormWraper form input {
+      .aboutMe .contactFormWraper form input, .aboutMe .contactFormWraper form textarea {
         margin-top: 20px;
         border: none;
         border-radius: 21px;
@@ -474,8 +532,12 @@ footer {
         font-size: 16px;
         color: #5d5a55;
         padding: 0 20px; }
-      .aboutMe .contactFormWraper form input:nth-child(3) {
-        height: 140px; }
+      .aboutMe .contactFormWraper form textarea {
+        min-width: 80%;
+        max-width: 80%;
+        min-height: 140px;
+        max-height: 140px;
+        padding-top: 15px; }
       .aboutMe .contactFormWraper form div {
         width: 100%;
         display: flex;
