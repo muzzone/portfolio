@@ -33,12 +33,18 @@
 }
 .workDescription{
 	height:100%;
+	position: relative;
+	overflow:hidden;
+	display: flex;
+    justify-content: center;
 	li{
 		height: calc(100% - 250px);
 		max-width: 320px;
 		margin: auto;
 		text-align: center;
 		padding-top: 250px;
+		position: absolute;
+		top: 100%;
 		h3{
 			text-transform: uppercase;
 			font-size: 35px;
@@ -84,15 +90,20 @@
 .content__right-portfolio{
 	padding-bottom: 0 !important;
 	.workImages{
-		height:525px;
-		width:100%;
+		    height: 525px;
+		    width: 100%;
+		    overflow: hidden;
+		    display: flex;
+		    justify-content: center;
+		    position: relative;
 		li{
-			height: 100%;
-			width: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			max-width: 100%;
+			top: -100%;
+		    height: 100%;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    max-width: 100%;
+		    position: absolute;
 		}
 	}
 	.buttons{
@@ -224,4 +235,12 @@
 			
 		}
 	}			
+}
+.content__right-portfolio .workImages .active{
+	top: 0%;
+	z-index: 1
+}
+.workDescription .active{
+	top: 0%;
+	z-index: 1
 }

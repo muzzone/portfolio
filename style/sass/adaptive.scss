@@ -136,3 +136,12 @@
 		display: none !important;
 	}
 }
+@media screen and (max-width: 1100px){
+	.myWorks{
+		margin-top: -60px;
+	}
+	.workDescription li {
+		    padding-top: 0;
+		    padding: 100px 0;
+	}
+}
