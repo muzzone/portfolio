@@ -44,7 +44,7 @@
 		text-align: center;
 		padding-top: 250px;
 		position: absolute;
-		top: 100%;
+		top: -100%;
 		h3{
 			text-transform: uppercase;
 			font-size: 35px;
@@ -97,7 +97,7 @@
 		    justify-content: center;
 		    position: relative;
 		li{
-			top: -100%;
+			top: 100%;
 		    height: 100%;
 		    display: flex;
 		    justify-content: center;
@@ -243,4 +243,11 @@
 .workDescription .active{
 	top: 0%;
 	z-index: 1
+}
+.slider_opposite{
+	width: 50%;
+}
+.content .content__left {
+	height: 750px;
+	width:100%;
 }

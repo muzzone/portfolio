@@ -6,11 +6,11 @@ var slider = (function () {
   var moveSlide = function (container, direction) {
     var items = $('.slider__item', container),
       activeItem = items.filter('.active'),
-      direction = direction == 'down' ? 100 : -100;
+      direction = direction == 'down' ? -100 : 100;
 
     if (counter >= items.length) counter = 0;
     var reqItem = items.eq(counter);
-    reqItem.css('z-index', '999');
+    reqItem.css('z-index', '1');
     // var prevItem = items.eq(counter + 1);
     // // if (counter >= items.length){
     // //   prevItem = items.eq(0);
@@ -25,8 +25,8 @@ var slider = (function () {
       'top': 0
     }, duration, function () {
       activeItem.removeClass('active')
-        .css('top', '-' + direction + '%');
-      activeItem.css('z-index', '-999');
+        .css('top', -direction + '%');
+      activeItem.css('z-index', '-1');
       $(this).addClass('active');
       inProcess = false;
     });
