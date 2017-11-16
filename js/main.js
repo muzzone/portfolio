@@ -1,6 +1,9 @@
 var slider = (function () {
   var counter = 1,
     duration = 300,
+    currentDirection = 'up',
+    // oppositeItems = $('.slider_opposite li'),
+    // firstItems = $('.slider_first li'),
     inProcess = false;
 
   var moveSlide = function (container, direction) {
@@ -11,12 +14,7 @@ var slider = (function () {
     if (counter >= items.length) counter = 0;
     var reqItem = items.eq(counter);
     reqItem.css('z-index', '1');
-    // var prevItem = items.eq(counter + 1);
-    // // if (counter >= items.length){
-    // //   prevItem = items.eq(0);
-    // // }
-    // console.log(items.eq());
-    // prevItem.css('z-index', '999');
+
     activeItem.animate({
       'top': direction + '%'
     }, duration);
@@ -39,9 +37,29 @@ var slider = (function () {
 
         if (!inProcess) {
           inProcess = true;
-
+           if (currentDirection == 'down') {
+             $('.slider_opposite .slider__item').not(".active").css('top', -100 + '%');
+             $('.slider_first .slider__item').not(".active").css('top', 100 + '%');
+             currentDirection = 'up';
+          };
           moveSlide($('.slider_first'), 'down');
           moveSlide($('.slider_opposite'), 'up');
+
+          counter++;
+        }
+      });
+      $('.slider__controls-bottom').on('click', function (e) {
+        e.preventDefault();
+
+        if (!inProcess) {
+          inProcess = true;
+          if (currentDirection == 'up') {
+             $('.slider_opposite .slider__item').not(".active").css('top', 100 + '%');
+             $('.slider_first .slider__item').not(".active").css('top', -100 + '%');
+             currentDirection = 'down';
+          };
+          moveSlide($('.slider_first'), 'up');
+          moveSlide($('.slider_opposite'), 'down');
 
           counter++;
         }
