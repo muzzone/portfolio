@@ -1,3 +1,4 @@
+//////////////////// 1480 ////////////////////
 @media screen and (max-width: 1480px){
 	.content .content__left .hero{
 		flex-wrap: wrap;
@@ -12,8 +13,8 @@
 	footer .mainContent > ul > li > a{
 		margin-right: 20px;
 	}
-
 }
+//////////////////// 1280 ////////////////////
 @media screen and (max-width: 1280px){
 	.content .content__right .skills ul li{
 		margin-right: 20px;
@@ -43,6 +44,18 @@
 	.content .content__left .hero .about__title{
     	height: 150px;
 	}
+	.slider_opposite {
+	    width: 100%;
+	}
+	.workDescription li {
+	    padding-top: 40px;
+	}
+	.portfolioContent .content__left-portfolio{
+		height: 350px;
+	}
+	footer{
+		margin-top: -230px;
+	}
 	footer .mainContent > ul{
 		flex-wrap: wrap;
 		>li{
@@ -55,7 +68,38 @@
 		}
 	}
 }
+//////////////////// 1100 ////////////////////
+@media screen and (max-width: 1100px){
+	.myWorks{
+		margin-top: -60px;
+	}
+	.workDescription li {
+		    padding-top: 0;
+		    padding: 40px 0;
+	}
+}
+
+@media screen and (max-width: 1020px){
+	.nav-blog{
+		display: none !important;
+	}
+}
+//////////////////// 766 /////////////////////
 @media screen and (max-width: 766px){
+	.aboutMe{
+		height: 1750px;
+		.says{
+			flex-wrap: wrap;
+			justify-content: center;
+			li{
+				margin-bottom: 50px;
+				width: 100%;
+			}
+		} 
+	}	
+	footer{
+		    margin-top: -320px;
+	}
 	footer .mainContent > ul > li{
 		width: 100%;
     	text-align: center;
@@ -97,7 +141,29 @@
 		margin:0 15px;
 	}
 }
+//////////////////// 570 /////////////////////
+@media screen and (max-width: 570px){
+.about__triangle_mobile{
+		margin-top: -55px;
+	}
+}
+//////////////////// 426 /////////////////////
 @media screen and (max-width: 426px){
+	.myWorks{
+		margin-top: -20px;
+	}
+	.title h2{
+		font-size: 53px;
+	}
+	footer{
+		margin-top: -350px;
+	}
+	.content__right-portfolio .workImages{
+		height: 300px;
+	}
+	.content__right-portfolio .buttons .next, .content__right-portfolio .buttons .prev{
+		height: 150px;
+	}
 	.map .contacts{
 		max-width: 100%;
 		margin:0;
@@ -126,22 +192,22 @@
 		
 	}
 }
-@media screen and (max-width: 570px){
-.about__triangle_mobile{
-		margin-top: -55px;
+//////////////////// 350 /////////////////////
+@media screen and (max-width: 350px){
+	.content__right-portfolio .buttons .next, .content__right-portfolio .buttons .prev{
+		height: 125px;
 	}
-}
-@media screen and (max-width: 1020px){
-	.nav-blog{
-		display: none !important;
+	.content__right-portfolio .workImages{
+		height: 280px;
 	}
-}
-@media screen and (max-width: 1100px){
-	.myWorks{
-		margin-top: -60px;
+	.aboutMe{
+		height: 1850px;
 	}
-	.workDescription li {
-		    padding-top: 0;
-		    padding: 100px 0;
+	.workDescription li h3{
+		font-size: 30px;
+		padding: 0 10px;
+	}
+	footer{
+		margin-top: -370px;
 	}
 }

@@ -16,11 +16,15 @@
 	img{
 		margin-top: -150px;
     	opacity: 0.05;
+    	max-width: 100%;
 	}
 }
 .myWorks{
 	margin-top: -100px;
 	background: #f8f9f5;
+	img{
+		max-width: 95%;
+	}
 }
 .portfolioContent{
 	min-height: 750px;
@@ -66,6 +70,7 @@
 			font-size: 16px;
 			font-family:'Roboto-Medium';
 		}
+		
 		a{
 			display: flex;
 			justify-content: center;
@@ -104,6 +109,9 @@
 		    align-items: center;
 		    max-width: 100%;
 		    position: absolute;
+		    img{
+		    	max-width: 95%;
+		    }
 		}
 	}
 	.buttons{
@@ -115,12 +123,22 @@
 			width: 50%;
 			border: none;
 			padding:0;
+			display: flex;
+    		justify-content: center;
 		}
 		.next{
 			background: #a7aba3;
+			img{
+				transform: rotate(180deg);
+			}
 		}
 		.prev{
 			background: #b5bab1;
+		}
+		.next, .prev{
+			background-position: center;
+    		background-size: contain;
+    		background-repeat: no-repeat;
 		}
 	}
 
@@ -129,6 +147,7 @@
 	background-image: url('../img/bg.png');
 	background-position: bottom;
 	background-repeat: no-repeat;
+	height: 1356px;
 	.title{
 		margin-top: 75px;
 		img{
@@ -247,7 +266,7 @@
 .slider_opposite{
 	width: 50%;
 }
-.content .content__left {
+.portfolioContent .content__left-portfolio {
 	height: 750px;
 	width:100%;
 }

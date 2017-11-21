@@ -380,11 +380,14 @@ footer {
     margin-top: 20px; }
   .title img {
     margin-top: -150px;
-    opacity: 0.05; }
+    opacity: 0.05;
+    max-width: 100%; }
 
 .myWorks {
   margin-top: -100px;
   background: #f8f9f5; }
+  .myWorks img {
+    max-width: 95%; }
 
 .portfolioContent {
   min-height: 750px; }
@@ -462,6 +465,8 @@ footer {
       align-items: center;
       max-width: 100%;
       position: absolute; }
+      .content__right-portfolio .workImages li img {
+        max-width: 95%; }
   .content__right-portfolio .buttons {
     width: 100%;
     max-height: 225px;
@@ -470,16 +475,25 @@ footer {
       height: 225px;
       width: 50%;
       border: none;
-      padding: 0; }
+      padding: 0;
+      display: flex;
+      justify-content: center; }
     .content__right-portfolio .buttons .next {
       background: #a7aba3; }
+      .content__right-portfolio .buttons .next img {
+        transform: rotate(180deg); }
     .content__right-portfolio .buttons .prev {
       background: #b5bab1; }
+    .content__right-portfolio .buttons .next, .content__right-portfolio .buttons .prev {
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat; }
 
 .aboutMe {
   background-image: url("../img/bg.png");
   background-position: bottom;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  height: 1356px; }
   .aboutMe .title {
     margin-top: 75px; }
     .aboutMe .title img {
@@ -578,7 +592,7 @@ footer {
 .slider_opposite {
   width: 50%; }
 
-.content .content__left {
+.portfolioContent .content__left-portfolio {
   height: 750px;
   width: 100%; }
 
@@ -619,6 +633,18 @@ footer {
   .content .content__left .hero .about__title {
     height: 150px; }
 
+  .slider_opposite {
+    width: 100%; }
+
+  .workDescription li {
+    padding-top: 40px; }
+
+  .portfolioContent .content__left-portfolio {
+    height: 350px; }
+
+  footer {
+    margin-top: -230px; }
+
   footer .mainContent > ul {
     flex-wrap: wrap; }
     footer .mainContent > ul > li {
@@ -627,7 +653,29 @@ footer {
     footer .mainContent > ul > li:nth-child(3) {
       width: 100%;
       margin-top: 20px; } }
+@media screen and (max-width: 1100px) {
+  .myWorks {
+    margin-top: -60px; }
+
+  .workDescription li {
+    padding-top: 0;
+    padding: 40px 0; } }
+@media screen and (max-width: 1020px) {
+  .nav-blog {
+    display: none !important; } }
 @media screen and (max-width: 766px) {
+  .aboutMe {
+    height: 1750px; }
+    .aboutMe .says {
+      flex-wrap: wrap;
+      justify-content: center; }
+      .aboutMe .says li {
+        margin-bottom: 50px;
+        width: 100%; }
+
+  footer {
+    margin-top: -320px; }
+
   footer .mainContent > ul > li {
     width: 100%;
     text-align: center;
@@ -661,7 +709,25 @@ footer {
   footer .mainContent > ul > li .socials li {
     margin-right: 0;
     margin: 0 15px; } }
+@media screen and (max-width: 570px) {
+  .about__triangle_mobile {
+    margin-top: -55px; } }
 @media screen and (max-width: 426px) {
+  .myWorks {
+    margin-top: -20px; }
+
+  .title h2 {
+    font-size: 53px; }
+
+  footer {
+    margin-top: -350px; }
+
+  .content__right-portfolio .workImages {
+    height: 300px; }
+
+  .content__right-portfolio .buttons .next, .content__right-portfolio .buttons .prev {
+    height: 150px; }
+
   .map .contacts {
     max-width: 100%;
     margin: 0;
@@ -682,18 +748,21 @@ footer {
 
   .footer1 p {
     display: none; } }
-@media screen and (max-width: 570px) {
-  .about__triangle_mobile {
-    margin-top: -55px; } }
-@media screen and (max-width: 1020px) {
-  .nav-blog {
-    display: none !important; } }
-@media screen and (max-width: 1100px) {
-  .myWorks {
-    margin-top: -60px; }
+@media screen and (max-width: 350px) {
+  .content__right-portfolio .buttons .next, .content__right-portfolio .buttons .prev {
+    height: 125px; }
 
-  .workDescription li {
-    padding-top: 0;
-    padding: 100px 0; } }
+  .content__right-portfolio .workImages {
+    height: 280px; }
+
+  .aboutMe {
+    height: 1850px; }
+
+  .workDescription li h3 {
+    font-size: 30px;
+    padding: 0 10px; }
+
+  footer {
+    margin-top: -370px; } }
 
 /*# sourceMappingURL=main.css.map */
