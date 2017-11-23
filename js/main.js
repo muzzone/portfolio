@@ -13,17 +13,10 @@ var slider = (function () {
        srcListLength ++ ;
      };
 
-    // console.log(imgList);
-    // console.log(srcList);
-    // console.log(srcListLength);
-
     $('.slider__controls-top').css('background-image', 'url(\"./' + srcList[1] + '\")');
     $('.slider__controls-bottom').css('background-image', 'url(\"./' + srcList[srcListLength - 1] + '\"');
  
-    // console.log('url(\"../' + srcList[3] + '\")');
-
   var moveSlide = function (container, direction, button) {
-    //console.log(counter);
     var items = $('.slider__item', container),
       activeItem = items.filter('.active'),
       direction = direction == 'down' ? -100 : 100;
@@ -56,12 +49,37 @@ var slider = (function () {
       inProcess = false;
     });
   };
+
   var changeBackground = function(direction){
     if (direction == 'up') {
-       var localCounter = counter;
-       console.log(localCounter);
-       $('.slider__controls-top').css('background-image', 'url(\"./' + srcList[localCounter] + '\")');
-       $('.slider__controls-bottom').css('background-image', 'url(\"./' + srcList[localCounter] + '\")');
+       var topBtnCounter = counter;
+       var bottomBtnCounter = counter;
+
+       if (topBtnCounter == srcListLength - 1) {
+        topBtnCounter = -1;
+       }
+
+       if (bottomBtnCounter <= 0) {
+        bottomBtnCounter = srcListLength;
+       }
+
+       $('.slider__controls-top').css('background-image', 'url(\"./' + srcList[topBtnCounter + 1] + '\")');
+       $('.slider__controls-bottom').css('background-image', 'url(\"./' + srcList[bottomBtnCounter - 1] + '\")');
+    }
+    if (direction == 'bottom') {
+       var topBtnCounter = counter;
+       var bottomBtnCounter = counter;
+
+       if (bottomBtnCounter == 2) {
+        bottomBtnCounter = srcListLength +2 ;
+       }
+       if (bottomBtnCounter == 1) {
+        bottomBtnCounter = srcListLength +1;
+       }
+
+       console.log(bottomBtnCounter);
+       $('.slider__controls-top').css('background-image', 'url(\"./' + srcList[topBtnCounter -1] + '\")');
+       $('.slider__controls-bottom').css('background-image', 'url(\"./' + srcList[bottomBtnCounter - 3] + '\")');
     }
   };
   return {
@@ -94,7 +112,7 @@ var slider = (function () {
           };
           moveSlide($('.slider_first'), 'up', 'bottom');
           moveSlide($('.slider_opposite'), 'down', 'bottom');
-
+          changeBackground('bottom');
           counter--;
         }
       });

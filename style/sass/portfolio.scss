@@ -123,17 +123,32 @@
 			width: 50%;
 			border: none;
 			padding:0;
-			display: flex;
-    		justify-content: center;
+			div{
+				height: 100%;
+				width: 100%;
+				display: flex;
+    			justify-content: center;
+    			transition: 0.15s;
+			}
 		}
 		.next{
-			background: #a7aba3;
+			div{
+				background: rgba(176, 183, 170, 0.7);
+			}
+			div:hover{
+				background: rgba(176, 183, 170, 0.6)
+			}
 			img{
 				transform: rotate(180deg);
 			}
 		}
 		.prev{
-			background: #b5bab1;
+			div{
+				background: rgba(147, 153, 141, 0.7);
+			}
+			div:hover{
+				background: rgba(147, 153, 141, 0.6);
+			}
 		}
 		.next, .prev{
 			background-position: center;

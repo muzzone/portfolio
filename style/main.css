@@ -475,15 +475,23 @@ footer {
       height: 225px;
       width: 50%;
       border: none;
-      padding: 0;
-      display: flex;
-      justify-content: center; }
-    .content__right-portfolio .buttons .next {
-      background: #a7aba3; }
-      .content__right-portfolio .buttons .next img {
-        transform: rotate(180deg); }
-    .content__right-portfolio .buttons .prev {
-      background: #b5bab1; }
+      padding: 0; }
+      .content__right-portfolio .buttons .next div, .content__right-portfolio .buttons .prev div {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transition: 0.15s; }
+    .content__right-portfolio .buttons .next div {
+      background: rgba(176, 183, 170, 0.7); }
+    .content__right-portfolio .buttons .next div:hover {
+      background: rgba(176, 183, 170, 0.6); }
+    .content__right-portfolio .buttons .next img {
+      transform: rotate(180deg); }
+    .content__right-portfolio .buttons .prev div {
+      background: rgba(147, 153, 141, 0.7); }
+    .content__right-portfolio .buttons .prev div:hover {
+      background: rgba(147, 153, 141, 0.6); }
     .content__right-portfolio .buttons .next, .content__right-portfolio .buttons .prev {
       background-position: center;
       background-size: contain;
