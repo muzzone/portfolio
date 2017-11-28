@@ -6,11 +6,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style/header.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/modernizr.js"></script>
   	<script src="js/main.js"></script>
 </head>
 <body>
+	<nav>
+		<ul class="cd-primary-nav">
+			<li><a href="./portfolio.html">Мои работы</a></li>
+			<li><a href="./index.html">Обо мне</a></li>
+			<li><a href="./blog.html">Блог</a></li>
+			<li><a href="#0">Авторизация</a></li>
+		</ul>
+	</nav>
 	<header>
-		<nav>
+		<div class="nav">
 			<ul class="socials">
 				<li><a href="#">
 					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -55,12 +64,8 @@
 				</svg></a></li>
 			</ul>
 
-			<div class="menuBtn">
-				<hr noshade>
-				<hr noshade>
-				<hr noshade>
-			</div>
-		</nav>
+			
+		</div>
 		<!-- // nav end // -->
 		<div class="main">
 			<img src="img/icons/portfolio_header.svg">
@@ -218,7 +223,19 @@
 		<div class="footer1"><p>© Алексей Мирошниченко | Создано с любовью | 2017</p></div>
 		<div class="footer2"><p>© Алексей Мирошниченко <br> Создано с любовью | 2017</p></div>
 	</footer>
+	<link rel="stylesheet" type="text/css" href="style/menu.css">
 	<link rel="stylesheet" type="text/css" href="style/main.css">
+
+
+<div class="cd-overlay-nav">
+	<span></span>
+</div> <!-- cd-overlay-nav -->
+
+<div class="cd-overlay-content">
+	<span></span>
+</div> <!-- cd-overlay-content -->
+
+<a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
 	
 </body>
 </html>

@@ -77,7 +77,6 @@ var slider = (function () {
         bottomBtnCounter = srcListLength +1;
        }
 
-       console.log(bottomBtnCounter);
        $('.slider__controls-top').css('background-image', 'url(\"./' + srcList[topBtnCounter -1] + '\")');
        $('.slider__controls-bottom').css('background-image', 'url(\"./' + srcList[bottomBtnCounter - 3] + '\")');
     }
@@ -155,4 +154,5 @@ $(function () {
     console.log('Оба объекта в состоянии resolve');
   });
 });
+
 });

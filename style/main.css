@@ -282,6 +282,8 @@ footer {
           text-decoration: none;
           color: #fff;
           margin-right: 40px; }
+        footer .mainContent > ul > li a:hover {
+          text-decoration: underline; }
         footer .mainContent > ul > li a:nth-child(4) {
           margin-right: 0; }
         footer .mainContent > ul > li q {
@@ -482,16 +484,18 @@ footer {
         display: flex;
         justify-content: center;
         transition: 0.15s; }
+        .content__right-portfolio .buttons .next div img, .content__right-portfolio .buttons .prev div img {
+          opacity: 0.7; }
     .content__right-portfolio .buttons .next div {
       background: rgba(176, 183, 170, 0.7); }
-    .content__right-portfolio .buttons .next div:hover {
-      background: rgba(176, 183, 170, 0.6); }
+    .content__right-portfolio .buttons .next div:hover img {
+      opacity: 1; }
     .content__right-portfolio .buttons .next img {
       transform: rotate(180deg); }
     .content__right-portfolio .buttons .prev div {
       background: rgba(147, 153, 141, 0.7); }
-    .content__right-portfolio .buttons .prev div:hover {
-      background: rgba(147, 153, 141, 0.6); }
+    .content__right-portfolio .buttons .prev div:hover img {
+      opacity: 1; }
     .content__right-portfolio .buttons .next, .content__right-portfolio .buttons .prev {
       background-position: center;
       background-size: contain;
