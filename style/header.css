@@ -22,8 +22,24 @@ p {
 
 header {
   height: 600px;
-  background-image: url("../img/water.jpg");
-  background-position: center; }
+  background-position: center;
+  overflow: hidden;
+  position: relative; }
+  header .parallax {
+    position: absolute;
+    z-index: -999; }
+    header .parallax img {
+      position: absolute;
+      width: 1920px;
+      left: -100px; }
+    header .parallax #parallax_1 img {
+      top: 450px; }
+    header .parallax #parallax_2 img {
+      top: 16px; }
+    header .parallax #parallax_3 img {
+      top: -30px; }
+    header .parallax #parallax_4 img {
+      top: -20px; }
   header .nav {
     margin: auto;
     max-width: 1800px;

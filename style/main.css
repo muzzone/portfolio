@@ -76,6 +76,7 @@ p {
     height: 6.875rem;
     margin-top: -110px; }
   .content .content__left {
+    z-index: 3;
     background: #eceee2;
     width: 50%; }
     .content .content__left .about__triangle {
@@ -115,6 +116,7 @@ p {
           color: #3c4044;
           text-align: start; }
   .content .content__right {
+    z-index: 3;
     padding-bottom: 50px;
     background: #f4f5f0;
     width: 50%; }
