@@ -4,37 +4,10 @@ header{
 	height: 600px;
 	//background-image: url("../img/water.jpg");
 	background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
 	overflow: hidden;
 	position: relative;
-	.parallax{
-		position: absolute;
-		z-index: -999;
-		img{
-			position: absolute;
-			width: 1920px;
-			left: -100px;
-		}
-		#parallax_1{
-			img{
-				top: 450px;
-			}
-		}
-		#parallax_2{
-			img{
-				top: 16px;
-			}
-		}
-		#parallax_3{
-			img{
-				top: -30px;
-			}
-		}
-		#parallax_4{
-			img{
-				top: -20px;
-			}
-		}
-	}
 	.nav{
 		margin: auto;
 		max-width: 1800px;

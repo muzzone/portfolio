@@ -53,6 +53,25 @@ p {
   margin: 0;
   padding: 0; }
 
+.parallax {
+  position: absolute;
+  z-index: -999; }
+  .parallax img {
+    position: absolute;
+    width: 1920px;
+    left: -100px; }
+  .parallax #parallax_1 img {
+    top: 450px; }
+  .parallax #parallax_2 img {
+    top: 16px;
+    z-index: 50; }
+  .parallax #parallax_3 img {
+    top: -30px;
+    z-index: 48; }
+  .parallax #parallax_4 img {
+    top: -20px;
+    z-index: 47; }
+
 .content {
   display: flex; }
   .content h2 {
@@ -611,6 +630,12 @@ footer {
   height: 750px;
   width: 100%; }
 
+@media screen and (min-width: 1800px) {
+  .parallax img {
+    width: 2100px; } }
+@media screen and (min-width: 1925px) {
+  .parallax img {
+    width: 2800px; } }
 @media screen and (min-width: 1700px) {
   .triangle-blog {
     margin-top: -165px; }
@@ -685,6 +710,13 @@ footer {
   .nav-blog {
     display: none !important; } }
 @media screen and (max-width: 766px) {
+  header {
+    background-image: url("../img/water.jpg");
+    z-index: -1; }
+
+  .parallax {
+    display: none; }
+
   .aboutMe {
     height: 1750px; }
     .aboutMe .says {

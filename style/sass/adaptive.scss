@@ -1,3 +1,18 @@
+@media screen and (min-width: 1800px){
+	.parallax{
+		img{
+			width: 2100px;
+		}
+	}
+}
+@media screen and (min-width: 1925px){
+	.parallax{
+		img{
+			width: 2800px;
+		}
+	}
+}
+//////////////////// 1700 ////////////////////
 @media screen and (min-width: 1700px){
 	.triangle-blog{
 		margin-top: -165px;
@@ -94,6 +109,13 @@
 }
 //////////////////// 766 /////////////////////
 @media screen and (max-width: 766px){
+	header{
+		background-image: url("../img/water.jpg");
+		z-index: -1;
+	}
+	.parallax{
+		display: none;
+	}
 	.aboutMe{
 		height: 1750px;
 		.says{

@@ -4,14 +4,12 @@ Primary style
 
 -------------------------------- */
 
-
 nav a {
   text-decoration: none;
   color: #373e42;
 }
 nav ul{
   font-family: Sansus-Webissimo-Regular;
-  
 }
 
 /* -------------------------------- 
@@ -23,9 +21,9 @@ html, body {
   height: 100%;
 }
 
-header {
+/*header {
   z-index: 3;
-}
+}*/
 
 .cd-logo, .cd-nav-trigger {
   position: fixed;
@@ -365,4 +363,16 @@ header {
     font-size: 1.125rem;
     line-height: 1.8;
   }
+}
+.cd-primary-nav{
+  z-index: 999;
+}
+.cd-overlay-nav{
+  z-index: 998;
+}
+.cd-overlay-content{
+  z-index: 999;
+}
+.cd-nav-trigger{
+  z-index: 999;
 }

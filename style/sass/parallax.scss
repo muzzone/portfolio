@@ -1,0 +1,32 @@
+.parallax{
+	position: absolute;
+	z-index: -999;
+	img{
+		position: absolute;
+		width: 1920px;
+		left: -100px;
+	}
+	#parallax_1{
+		img{
+			top: 450px;
+		}
+	}
+	#parallax_2{
+		img{
+			top: 16px;
+			z-index: 50;
+		}
+	}
+	#parallax_3{
+		img{
+			top: -30px;
+			z-index: 48;
+		}
+	}
+	#parallax_4{
+		img{
+			top: -20px;
+			z-index: 47;
+		}
+	}
+}
