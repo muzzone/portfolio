@@ -59,7 +59,8 @@ p {
   .parallax img {
     position: absolute;
     width: 1920px;
-    left: -100px; }
+    left: -100px;
+    transition: 0.1s; }
   .parallax #parallax_1 img {
     top: 450px; }
   .parallax #parallax_2 img {
@@ -764,7 +765,10 @@ footer {
     margin: 0 15px; } }
 @media screen and (max-width: 570px) {
   .about__triangle_mobile {
-    margin-top: -55px; } }
+    margin-top: -55px; }
+
+  .content .content__right .skills ul li {
+    margin-top: 20px; } }
 @media screen and (max-width: 426px) {
   .myWorks {
     margin-top: -20px; }
