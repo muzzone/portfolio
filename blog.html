@@ -4,13 +4,16 @@
 	<title>Blog</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style/header.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/modernizr.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/parallax.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/preloader.css">
 </head>
 <body>
+	<div class="preloader">
+	    <div class="preloader__spinner">
+	        <div class="preloader__animation"></div>
+	        <div class="preloader__percents">0%</div>
+	    </div>
+	</div>
+	
 	<nav>
 		<ul class="cd-primary-nav">
 			<li ><a href="./index.html">Обо мне</a></li>
@@ -149,9 +152,6 @@
 		<div class="footer1"><p>© Алексей Мирошниченко | Создано с любовью | 2017</p></div>
 		<div class="footer2"><p>© Алексей Мирошниченко <br> Создано с любовью | 2017</p></div>
 	</footer>
-	<link rel="stylesheet" type="text/css" href="style/menu.css">
-	<link rel="stylesheet" type="text/css" href="style/main.css">
-
 
 <div class="cd-overlay-nav">
 	<span></span>
@@ -162,5 +162,13 @@
 </div> <!-- cd-overlay-content -->
 
 <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/main.js"></script>
+<script src="js/parallax.js"></script>
+<link rel="stylesheet" type="text/css" href="style/menu.css">
+<link rel="stylesheet" type="text/css" href="style/main.css">	
+<script src="js/preloader.js"></script>
 </body>
 </html>

@@ -139,19 +139,6 @@ $(function () {
     setTimeout(function(){
       deferred2.resolve();
     }, 3000);
-
-  });
-
-  deferred.done(function() {
-    console.log('deferref is done!!');
-  });
-
-  deferred2.fail(function() {
-    console.log('deferred is failed!!');
-  });
-
-  $.when(deferred, deferred2).done(function(){
-    console.log('Оба объекта в состоянии resolve');
   });
 });
 
