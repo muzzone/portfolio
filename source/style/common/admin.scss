@@ -8,7 +8,7 @@
 		background: #6c9c5a;
 		padding:0 30px;
 		color:#fff;
-		h3{
+		h1{
 			font-size: 28px;
 			font-family: Roboto-Medium;
 		}
@@ -47,16 +47,21 @@
 	    background-repeat: no-repeat;
 		overflow: hidden;
 		position: relative;
-		div{
+		> div{
 			display: none;
 			padding-top: 50px;
 			padding-left: 30px;
 			min-height: 728px;
 			background: rgba(255,255,255,0.8);
+			form{
+				display: flex;
+    			flex-direction: column;
+			}
 			h2{
 				font-size: 21px;
 				font-family: Roboto-Medium;
 				color: #566358;
+				margin-bottom: 50px;
 			}
 		}
 		.activeTab{

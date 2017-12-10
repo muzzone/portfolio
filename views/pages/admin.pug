@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title Portfolio
+    title admin
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js')
@@ -13,16 +13,37 @@ html
             h1 Панель администратора
             a(href='/') Вернуться на сайт
         nav
-            a.active Главная
+            a Главная
             a Портфолио
-            a Блог
+            a.active Блог
             a Авторизация
         .tabs
-            .mainPage.activeTab
+            .mainPage
                 h2 Страница 'Обо мне'
             .portfolioPage
                 h2 Страница 'Портфолио'
-            .blogPage
+            .blogPage.activeTab
                 h2 Страница 'Блог'
+                .col
+                  .form-container
+                    form.form#blog( method="POST")
+                        .form__subtitle Добавить запись в блог
+                        .status 
+                        label.form__input-line
+                            input(name="title" type="text" placeholder="Заголовок").form__input
+                        label.form__input-line
+                            - 
+                                var data = new Date().toLocaleDateString('ru', { 
+                                            year: 'numeric', 
+                                            month: '2-digit', 
+                                            day: '2-digit'
+                                            })
+                            input(name="date" type="date" value=`${data}`).form__input
+                        textarea(placeholder="Ваша запись" name="text").form__textarea
+                        .form__btns.form__input-line
+                            input(name="" type="submit" value="Отправить").form__btn-send
+                            input(name="" type="reset" value="Очистить").form__btn-reset
             .authorizationPage
                 h2 Страница 'Авторизации'
+    script(src='assets/js/foundation.js')
+    script(src='assets/js/admin.js')
