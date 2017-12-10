@@ -267,10 +267,10 @@
 					color:#fff;
 					cursor: pointer;
 				}
-				.send{
+				.send, .clean{
 					background: rgba(108, 156, 90, 0.85);
 				}
-				.clean{
+				.send:hover, .clean:hover{
 					background: rgba(78, 136, 57, 0.85);
 				}
 			}

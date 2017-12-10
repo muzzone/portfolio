@@ -17,7 +17,7 @@ html
         li
           a(href='/blog') Блог
         li
-          a(href='#0') Авторизация
+          a(href='/login') Авторизация
     header
       ul#parallax.parallax
         li#parallax_2
@@ -161,7 +161,6 @@ html
         form#form(action='#')
           input(type='text', name='name', placeholder='Имя')
           input(type='text', name='email', placeholder='Email')
-          // <input type="text" name="message" placeholder="Ваше сообщение">
           textarea(form='form', name='message', placeholder='Ваше сообщение', maxlength='500')
           div
             button.send Отправить
@@ -178,7 +177,7 @@ html
             a(href='/portfolio') Мои работы
             a(href='/') Обо мне
             a(href='/blog') Блог
-            a(href='') Авторизация
+            a(href='login') Авторизация
             ul.socials
               li
                 a(href='#')

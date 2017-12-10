@@ -1,0 +1,66 @@
+.admin{
+	header{
+		height: 80px;
+		width: calc(100% - 60px);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #6c9c5a;
+		padding:0 30px;
+		color:#fff;
+		h3{
+			font-size: 28px;
+			font-family: Roboto-Medium;
+		}
+		a{
+			font-size: 16px;
+			text-decoration: underline;
+			color: #ffffffb3;
+			cursor: pointer;
+		}
+		a:hover{
+			color:#fff;
+		}
+	}
+	nav{
+		height: 60px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		background:#f0efe9;
+		a{
+			padding: 0 60px;
+			color: #566358;
+			font-size: 16px;
+			font-family: Roboto-Medium;
+			cursor: pointer;
+
+		}
+		.active{
+			color: #6c9c5a;
+		}
+	}
+	.tabs{
+		background-image: url("../img/water.jpg");
+		background-position: center;
+		background-size: cover;
+	    background-repeat: no-repeat;
+		overflow: hidden;
+		position: relative;
+		div{
+			display: none;
+			padding-top: 50px;
+			padding-left: 30px;
+			min-height: 728px;
+			background: rgba(255,255,255,0.8);
+			h2{
+				font-size: 21px;
+				font-family: Roboto-Medium;
+				color: #566358;
+			}
+		}
+		.activeTab{
+			display: block;
+		}
+	}
+}

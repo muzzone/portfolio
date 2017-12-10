@@ -1,0 +1,73 @@
+
+.login{
+	background-image: url("../img/water.jpg");
+	background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+	height:1080px;
+}
+.loginContainer{
+	background: rgba(18, 38, 32, 0.6);
+	max-width: 380px;
+	margin: auto;
+	text-align: center;
+	margin-top: 300px;
+	padding-top: 40px;
+	border-radius: 3px;
+	h3{
+		font-size: 35px;
+		color: #fff;
+		font-family:Sansus-Webissimo-Regular;
+		text-transform: uppercase;
+	}
+	hr{
+		border: 2px solid #fff;
+		width: 90px;
+		margin: 20px auto;
+	}
+	form{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		input{
+			margin-top: 20px;
+			border: none;
+			border-radius: 21px;
+			height: 45px;
+			width: 80%;
+			outline:none;
+			font-family:Roboto-Regular;
+			font-size: 16px;
+			color: #5d5a55;
+			padding:0 20px;
+		}
+		div{
+			width: 100%;
+			display: flex;
+			margin-top: 20px;
+			height: 45px;
+			a{
+				width: 50%;
+				height: 100%;
+				border: none;
+				font-size: 16px;
+				font-family:Roboto-Medium;
+				color:#fff;
+				cursor: pointer;
+				display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    text-decoration: none;
+			}
+			.send, .toMain{
+				background: rgba(108, 156, 90, 0.85);
+			}
+			.send:hover, .toMain:hover{
+				background: rgba(78, 136, 57, 0.85);
+			}
+		}
+		
+	}
+}
