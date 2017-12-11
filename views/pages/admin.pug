@@ -12,17 +12,17 @@ html
         header
             h1 Панель администратора
             a(href='/') Вернуться на сайт
-        nav
-            a Главная
-            a Портфолио
-            a.active Блог
-            a Авторизация
+        nav#adminNav
+            a(href='mainPage').active Главная
+            a(href='portfolioPage') Портфолио
+            a(href='blogPage') Блог
+            a(href='authorizationPage') Авторизация
         .tabs
-            .mainPage
+            .tab.mainPage.activeTab
                 h2 Страница 'Обо мне'
-            .portfolioPage
+            .tab.portfolioPage
                 h2 Страница 'Портфолио'
-            .blogPage.activeTab
+            .tab.blogPage
                 h2 Страница 'Блог'
                 .col
                   .form-container
@@ -43,7 +43,7 @@ html
                         .form__btns.form__input-line
                             input(name="" type="submit" value="Отправить").form__btn-send
                             input(name="" type="reset" value="Очистить").form__btn-reset
-            .authorizationPage
+            .tab.authorizationPage
                 h2 Страница 'Авторизации'
     script(src='assets/js/foundation.js')
     script(src='assets/js/admin.js')

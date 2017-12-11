@@ -51,7 +51,6 @@
 			display: none;
 			padding-top: 50px;
 			padding-left: 30px;
-			min-height: 728px;
 			background: rgba(255,255,255,0.8);
 			form{
 				display: flex;
@@ -67,5 +66,15 @@
 		.activeTab{
 			display: block;
 		}
+	}
+}
+.blogPage{
+	label{
+		margin: 20px 0;
+	}
+	textarea{
+		width: 40%;
+		height: 200px;
+		margin: 20px 0;
 	}
 }

@@ -5,9 +5,10 @@ html
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js')
-    script(src='assets/js/main.js')
+    //- script(src='assets/js/main.js')
+    script(src=`/assets/js/main${suffix}.js${version}` defer)
     link(rel='stylesheet', type='text/css', href='assets/css/app.css')
-  body
+  body.loginBody
     .login
         .loginContainer
             h3 Авторизуйтесь

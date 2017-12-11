@@ -6,14 +6,15 @@
     background-repeat: no-repeat;
 	overflow: hidden;
 	position: relative;
-	height:1080px;
+	height:100%;
+	display: flex;
+
 }
 .loginContainer{
 	background: rgba(18, 38, 32, 0.6);
-	max-width: 380px;
+	width: 380px;
 	margin: auto;
 	text-align: center;
-	margin-top: 300px;
 	padding-top: 40px;
 	border-radius: 3px;
 	h3{
