@@ -20,16 +20,16 @@ const uploadDir = path.join(__dirname, config.upload);
 //подключаем модули
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
-//mongoose.connect('mongodb://root:12345@ds137191.mlab.com:37191/testing');
-mongoose
-  .connect(`mongodb://${config.db.host}:${config.db.port}/${config.db.name}`, {
-    user: config.db.user,
-    pass: config.db.password
-  })
-  .catch(e => {
-    console.error(e);
-    throw e;
-  });
+mongoose.connect('mongodb://root:asdqwe123@ds135946.mlab.com:35946/testing');
+// mongoose
+//   .connect(`mongodb://${config.db.host}:${config.db.port}/${config.db.name}`, {
+//     user: config.db.user,
+//     pass: config.db.password
+//   })
+//   .catch(e => {
+//     console.error(e);
+//     throw e;
+//   });
 
 require('./models/db-close');
 //подключаем модели(сущности, описывающие коллекции базы данных)
