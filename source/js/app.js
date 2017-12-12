@@ -1,6 +1,6 @@
 import prepareSend from './prepareSend';
 
-const formMail = document.querySelector('#mail');
+const formMail = document.querySelector('#mailForm');
 const formLogin = document.querySelector('#loginForm');
 
 if (formMail) {

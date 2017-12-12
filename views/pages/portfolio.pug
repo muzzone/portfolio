@@ -158,13 +158,14 @@ html
       .contactFormWraper
         h3 связатся со мной
         hr
-        form#form(action='#')
-          input(type='text', name='name', placeholder='Имя')
-          input(type='text', name='email', placeholder='Email')
-          textarea(form='form', name='message', placeholder='Ваше сообщение', maxlength='500')
+        form#mailForm(action='contact' method="POST")
+          .status
+          input(name="name" type="text" placeholder="Имя")
+          input(name="email" type="email" placeholder="E-mail")
+          textarea(form='mailForm', name='text', placeholder='Ваше сообщение', maxlength='500')
           div
-            button.send Отправить
-            button.clean Очистить
+            input(name="" type="submit" value="Отправить").send
+            input(name="" type="reset" value="Очистить").clean
     footer
       .mainContent
         ul
@@ -213,6 +214,7 @@ html
     script(src='assets/js/modernizr.js')
     script(src='assets/js/main.js')
     script(src='assets/js/parallax.js')
+    script(src='assets/js/app.js')
     link(rel='stylesheet', type='text/css', href='assets/css/menu.css')
     link(rel='stylesheet', type='text/css', href='assets/css/app.css')
     script(src='assets/js/preloader.js')

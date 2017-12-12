@@ -230,10 +230,11 @@
 
 		}
 		form{
+			position:relative;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			input, textarea{
+			> input, textarea{
 				margin-top: 20px;
 				border: none;
 				border-radius: 21px;
@@ -258,7 +259,7 @@
 				display: flex;
 				margin-top: 20px;
 				height: 45px;
-				button{
+				input{
 					width: 50%;
 					height: 100%;
 					border: none;
@@ -273,6 +274,14 @@
 				.send:hover, .clean:hover{
 					background: rgba(78, 136, 57, 0.85);
 				}
+			}
+			.status{
+				position: absolute;
+				color: #566358;
+				font-family:Sansus-Webissimo-Regular;
+				font-size: 16px;
+				width: auto;
+				top: -30px;
 			}
 			
 		}
