@@ -32,7 +32,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		input{
+		> input{
 			margin-top: 20px;
 			border: none;
 			border-radius: 21px;
@@ -49,7 +49,7 @@
 			display: flex;
 			margin-top: 20px;
 			height: 45px;
-			a{
+			input{
 				width: 50%;
 				height: 100%;
 				border: none;
@@ -68,6 +68,13 @@
 			.send:hover, .toMain:hover{
 				background: rgba(78, 136, 57, 0.85);
 			}
+		}
+		.status{
+			font-size: 16px;
+			text-align: center;
+			font-family:Roboto-Regular;
+			color: #fff;
+			width: auto;
 		}
 		
 	}

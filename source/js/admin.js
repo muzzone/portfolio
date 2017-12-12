@@ -69,7 +69,7 @@ function changeTab(node) {
 }
 
 ////////////////////////////////////////////
-var windowHeight = window.innerHeight;
-windowHeight = windowHeight - 140;
-$('.tab').css('min-height', windowHeight);
-$('.tabs').css('height', $('.tab').css('min-height'));
+// var windowHeight = window.innerHeight;
+// windowHeight = windowHeight - 140;
+// $('.tab').css('min-height', windowHeight);
+// $('.tabs').css('height', $('.tab').css('min-height'));
