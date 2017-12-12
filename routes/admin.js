@@ -6,7 +6,18 @@ const path = require('path');
 const config = require('../config.json');
 const mongoose = require('mongoose');
 
-router.get('/', function (req, res) {
+const isAdmin = (req, res, next) => {
+  // если в сессии текущего пользователя есть пометка о том, что он является
+  // администратором
+  if (req.session.isAdmin) {
+    //то всё хорошо :)
+    return next();
+  }
+  //если нет, то перебросить пользователя на главную страницу сайта
+  res.redirect('/');
+};
+
+router.get('/', isAdmin, function (req, res) {
   let obj = {
     title: 'Admin page'
   };
@@ -14,7 +25,7 @@ router.get('/', function (req, res) {
   res.render('pages/admin', obj);
 });
 
-router.post('/upload', function (req, res) {
+router.post('/upload', isAdmin, function (req, res) {
   let form = new formidable.IncomingForm();
   form.uploadDir = path.join(process.cwd(), config.upload);
   form.parse(req, function(err, fields, files) {
@@ -56,7 +67,7 @@ router.post('/upload', function (req, res) {
   });
 });
 
-router.post('/addpost', (req, res) => {
+router.post('/addpost', isAdmin, (req, res) => {
     //требуем наличия заголовка, даты и текста
   if (!req.body.title || !req.body.date || !req.body.text) {
     //если что-либо не указано - сообщаем об этом

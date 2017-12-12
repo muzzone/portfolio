@@ -1,9 +1,13 @@
 import prepareSend from './prepareSend';
 
 const formMail = document.querySelector('#mail');
+const formLogin = document.querySelector('#loginForm');
 
 if (formMail) {
   formMail.addEventListener('submit', prepareSendMail);
+}
+if (formLogin) {
+  formLogin.addEventListener('submit', prepareSendLogin);
 }
 
 function prepareSendMail(e) {
@@ -14,4 +18,18 @@ function prepareSendMail(e) {
     text: formMail.text.value
   };
   prepareSend('/contact', formMail, data);
+}
+
+function prepareSendLogin(e) {
+  e.preventDefault();
+  let data = {
+    login: formLogin.login.value,
+    password: formLogin.password.value
+  };
+  
+  prepareSend('/login', formLogin, data, function(data) {
+    if (data === 'Авторизация успешна!') {
+      location.href = '/admin';
+    }
+  });
 }
