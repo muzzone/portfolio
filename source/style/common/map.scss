@@ -1,6 +1,8 @@
 .map{
-	background: url('../img/map.png');
+	background: url('../img/map.jpg');
 	background-position: center;
+	background-repeat: no-repeat;
+    background-size: cover;
 	height:1110px;
 	width: 100%;
 	text-align: center;
@@ -17,6 +19,7 @@
 		margin: 30px auto;
 	}
 	.contacts{
+		box-shadow: 0 0 47px 0 rgba(90, 99, 89, 0.1);
 		position: relative;
 		top: 330px;
 		display: flex;
@@ -24,13 +27,13 @@
 		max-width: 380px;
     	margin: auto;
 		min-height: 315px;
-		background: rgba(255,255,255,0.6);
+		background: rgba(244, 245, 239, 0.85);
 		border-radius: 3px;
 		.contacts__content{
 			text-align: start;
 			margin-left: 40px;
 			li{
-				margin:15px 0;
+				margin: 40px 0;
 				p{
 					display: inline-block;
 					font-family: 'Roboto-medium';
@@ -39,6 +42,17 @@
 					margin-left: 10px;
 					position: relative;
     				top: -5px;
+				}
+				.phoneIco{
+					margin-left: 2px;
+					top: -1px;
+				}
+				.mailIco{
+					top: -2px;
+				}
+				img{
+					position: relative;
+
 				}
 			}
 		}

@@ -227,6 +227,9 @@
 }
 //////////////////// 350 /////////////////////
 @media screen and (max-width: 350px){
+	.map .contacts .contacts__content{
+		margin-left: 10px;
+	}
 	.content__right-portfolio .buttons .next, .content__right-portfolio .buttons .prev{
 		height: 125px;
 	}
