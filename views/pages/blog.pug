@@ -14,11 +14,12 @@ html
     nav
       ul.cd-primary-nav
         li
-          a(href='/') Обо мне
-        li
+          
           a(href='/portfolio') Мои работы
         li
           a(href='/blog') Блог
+        li
+          a(href='/') Обо мне
         li
           a(href='/login') Авторизация
     header
@@ -59,7 +60,7 @@ html
                   c0.328,0.219,1.141,0.031,3.141-3.375c0,0,0.938-1.625,1.672-3.516c0.125-0.344,0.391-0.484,0.391-0.484s0.25-0.141,0.594-0.094\
                   l4.5-0.031c1.359-0.172,1.578,0.453,1.578,0.453C30.203,1.879,29.468,3.379,27.625,5.832z')
           li
-            a(href='#')
+            a(href='https://www.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D0%BC%D0%B8%D1%80%D0%BE%D1%88%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%BA%D0%BE-687339146/')
               svg#Layer_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='24px', height='22.938px', viewbox='0 0 24 22.938', enable-background='new 0 0 24 22.938', xml:space='preserve')
                 g
                   path.svgico(d='M2.875,5.344H2.844C1.109,5.344,0,4.156,0,2.672C0,1.156,1.156,0,2.906,0c1.766,0,2.859,1.156,2.875,2.672\
@@ -80,26 +81,27 @@ html
       svg#Layer_1.triangle-blog(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='100%', viewbox='0 0 2032 360.368', enable-background='new 0 0 2032 360.368', xml:space='preserve')
         g
           polygon(fill-rule='evenodd', clip-rule='evenodd', fill='#faf8f1', points='2032,360.368 2032,0 1016,173 0,0 0,360.368  ')
+      h3 Пока нет записей, но скоро будут...
       .blog-wrapper
         .nav-blog
-          ul
-            li.blog-active Самое важное в SASS
-            li Приёмы в вёрстке, без которых  не обходится ни один сайт
-            li Самый необходимый набор Gulp плагинов
-            li Почему я выбрал Jade
-        .blog-content
-          each index in items
-              section
-                h2= index.title
-                  - 
-                   var data = new Date(index.date).toLocaleDateString('ru', { 
-                                  year: 'numeric', 
-                                  month: '2-digit', 
-                                  day: '2-digit'
-                                  })
-                span.data= data
-                p.blog-text= index.body
-                hr
+          //- ul
+          //-   li.blog-active Самое важное в SASS
+          //-   li Приёмы в вёрстке, без которых  не обходится ни один сайт
+          //-   li Самый необходимый набор Gulp плагинов
+          //-   li Почему я выбрал Jade
+        //- .blog-content
+        //-   each index in items
+        //-       section
+        //-         h2= index.title
+        //-           - 
+        //-            var data = new Date(index.date).toLocaleDateString('ru', { 
+        //-                           year: 'numeric', 
+        //-                           month: '2-digit', 
+        //-                           day: '2-digit'
+        //-                           })
+        //-         span.data= data
+        //-         p.blog-text= index.body
+        //-         hr
     footer.footer-blog
       .mainContent
         ul
@@ -121,7 +123,7 @@ html
                 a(href='https://github.com/muzzone')
                   img(src='assets/img/icons/github.svg')
               li
-                a(href='#')
+                a(href='https://www.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D0%BC%D0%B8%D1%80%D0%BE%D1%88%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%BA%D0%BE-687339146/')
                   img(src='assets/img/icons/in.svg')
           li
             q

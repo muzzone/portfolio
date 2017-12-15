@@ -305,3 +305,17 @@
 	height: 750px;
 	width:100%;
 }
+@-moz-document url-prefix() {
+	.workDescription{
+		display:block;
+		left: calc(50% - 160px);
+	}
+	.content__right-portfolio .workImages {
+		display: block;
+		li{
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, 0);
+		}
+	}
+}
