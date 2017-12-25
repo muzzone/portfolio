@@ -30,9 +30,6 @@ Thumbs.db
 .hg
 .idea
 .svn
-bower_components
-public
-dist
 build
 
 # Node.JS

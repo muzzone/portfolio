@@ -81,9 +81,9 @@ html
       svg#Layer_1.triangle-blog(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='100%', viewbox='0 0 2032 360.368', enable-background='new 0 0 2032 360.368', xml:space='preserve')
         g
           polygon(fill-rule='evenodd', clip-rule='evenodd', fill='#faf8f1', points='2032,360.368 2032,0 1016,173 0,0 0,360.368  ')
-      h3 Пока нет записей, но скоро будут...
+      //- h3 Пока нет записей, но скоро будут...
       .blog-wrapper
-        .nav-blog
+        //- .nav-blog
           //- ul
           //-   li.blog-active Самое важное в SASS
           //-   li Приёмы в вёрстке, без которых  не обходится ни один сайт
@@ -102,6 +102,47 @@ html
         //-         span.data= data
         //-         p.blog-text= index.body
         //-         hr
+        .blog-content
+          section
+            h2 Знакомство с CSS Grid
+            span.data 22.12.2017
+            p.blog-text Быстрое знакомство с будущим макетов веб-сайтов.
+            img(src='assets/img/blog1.png')
+            p.blog-text Grid макеты имеют основополагающее значение для дизайна веб-сайтов, а модуль CSS Grid — это самый мощный и простой инструмент для его создания.
+            p.blog-text В этом году модуль также получил нативную поддержку основных браузеров (Safari, Chrome, Firefox), поэтому я считаю, что всем фронтенд разработчикам придется изучать эту технологию в недалеком будущем
+            h3 Первый CSS Grid макет
+            p.blog-text Двумя основными компонентами CSS Grid являются обертка(Родитель) и элементы (Дети). Обертка — это фактически сетка, а элементы — это содержимое внутри сетки.
+            p.blog-text Вот разметка для обертки с шестью элементами в ней:
+            p.blog-text &lt;div class="wrapper"&gt;<br/>&nbsp;  &lt;div&gt;1&lt;/div&gt;<br/>&nbsp;  &lt;div&gt;2&lt;/div&gt;<br/>&nbsp;  &lt;div&gt;3&lt;/div&gt;<br/>&nbsp;  &lt;div&gt;4&lt;/div&gt;<br/>&nbsp;  &lt;div&gt;5&lt;/div&gt;<br/>&nbsp;  &lt;div&gt;6&lt;/div&gt;<br/>&lt;/div&gt;
+            p.blog-text Чтобы превратить нашу обертку div в сетку, нужно просто задать ей отображение grid:
+            p.blog-text .wrapper {<br/>  &nbsp; &nbsp;  display: grid;<br/>}<br/>
+            p.blog-text Но это пока ничего не делает, поскольку мы не определили, как мы хотим, чтобы наша сетка выглядела. Сейчас это просто складывает 6 div друг на друга.
+            img(src='assets/img/blog2.png')
+            h3 Столбцы и строки
+            p.blog-text Чтобы сделать ее двумерной, нужно определить столбцы и строки. Создадим три столбца и две строки. Будем использовать свойства <i>grid-template-row</i> и <i>grid-template-column</i>.
+            p.blog-text .wrapper {<br/>   &nbsp; &nbsp; display: grid;<br/>   &nbsp; &nbsp; grid-template-columns: 100px 100px 100px;<br/>  &nbsp; &nbsp;   grid-template-rows: 50px 50px;<br/>}<br/>
+            p.blog-text Поскольку было написано три значения для <i>grid-template-columns</i>, мы получим три столбца. И мы получим две строки, так как было указано два значения для <i>grid-template-rows</i>.
+            p.blog-text Значения определяют широту наших столбцов (100px) и высоту для наших строк (50px). Вот результат:
+            img(src='assets/img/blog3.png')
+            h3 Расположение элементов
+            p.blog-text Следующее, что потребуется знать, как разместить элементы на сетке.
+            p.blog-text Создаем сетку 3x3, используя ту же разметку, что и раньше.
+            p.blog-text .wrapper {<br/> &nbsp; &nbsp;   display: grid;<br/>  &nbsp; &nbsp;  grid-template-columns: 100px 100px 100px;<br/>  &nbsp; &nbsp;  grid-template-rows: 100px 100px 100px;<br/>}<br/><br/>
+            p.blog-text Это приведет к следующему макету:
+            img(src='assets/img/blog4.png')
+            p.blog-text Заметьте, мы видим только сетку 3x2 на странице, в то время как мы определили ее как сетку 3x3. Это потому, что есть только шесть элементов, чтобы заполнить сетку. Если бы было еще три, то и нижняя строка была бы заполнена.
+            p.blog-text Для позиционирования и изменения размера элементов будем указывать их и использовать свойства <i>grid-column</i> и <i>grid-row</i>:
+            p.blog-text .item1 {<br/> &nbsp; &nbsp;   grid-column-start: 1;<br/>  &nbsp; &nbsp;  grid-column-end: 4;<br/>}<br/><br/><br/> 
+            p.blog-text Здесь говориться  о том, что мы хотим, чтобы <i>item1</i> начинался с первой линии сетки и заканчивался на четвертом столбце. Другими словами, это займет всю строку. Вот как это будет выглядеть на экране:
+            img(src='assets/img/blog5.png')
+            p.blog-text Вы, наверное, в замешательстве, почему у нас 4 столбца, когда у нас есть только 3 столбца. Взгляните на это изображение, где отображены линии столбцов черным:
+            img(src='assets/img/blog6.png')
+            p.blog-text Обратите внимание, что теперь используються все строки в сетке. Когда первый элемент занял весь первый ряд, он сдвинул остальные элементы вниз.
+            p.blog-text Более простой синтаксис для примера выше:
+            p.blog-text .item1 {<br/> &nbsp; &nbsp;   grid-column: 1 / 4;<br/>}<br/><br/><br/>
+            p.blog-text Оригинал - 
+              a(href='https://medium.freecodecamp.org/learn-css-grid-in-5-minutes-f582e87b1228') https://medium.freecodecamp.org/learn-css-grid-in-5-minutes-f582e87b1228
+            hr
     footer.footer-blog
       .mainContent
         ul

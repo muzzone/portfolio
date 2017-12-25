@@ -30,7 +30,7 @@ $.path.task.forEach(function(taskPath) {
   require(taskPath)();
 });
 
-$.gulp.task('default', $.gulp.series(
+$.gulp.task('build', $.gulp.series(
   'clean',
   $.gulp.parallel(
     'sass',
@@ -41,10 +41,10 @@ $.gulp.task('default', $.gulp.series(
     'copy:script',
     'css:foundation',
     'create:version'
-  ),
-  'nodemon',
-  $.gulp.parallel(
-    'watch',
-    'serve'
   )
+  // 'nodemon',
+  // $.gulp.parallel(
+  //   'watch',
+  //   'serve'
+  // )
 ));

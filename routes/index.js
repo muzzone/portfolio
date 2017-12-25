@@ -48,7 +48,7 @@ router.get('/login', function (req, res) {
     title: 'login'
   };
   Object.assign(obj, req.app.locals.settings);
-  res.render('pages/Login', obj);
+  res.render('pages/login', obj);
 });
 
 module.exports = router;
